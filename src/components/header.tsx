@@ -4,7 +4,6 @@ import Link from "next/link";
 import {
     Popover,
     PopoverButton,
-    PopoverOverlay,
     PopoverPanel,
 } from "@headlessui/react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -64,7 +63,7 @@ export function Header() {
                         <Link href="/" className="flex gap-2 items-center font-semibold">
                             <SVGLogo />
                             <span className="text-lg font-bold text-slate-800">
-                                Quillminds
+                                LawFree
                             </span>
                         </Link>
                         <div className="hidden justify-center items-center lg:flex lg:gap-10">
@@ -93,9 +92,7 @@ export function Header() {
                                     <AnimatePresence initial={false}>
                                         {open && (
                                             <>
-                                                <PopoverOverlay
-                                                    static
-                                                    as={motion.div}
+                                                <motion.div
                                                     initial={{ opacity: 0 }}
                                                     animate={{ opacity: 1 }}
                                                     exit={{ opacity: 0 }}
@@ -136,12 +133,6 @@ export function Header() {
                                 </>
                             )}
                         </Popover>
-                        {/* <Button href="/login" variant="outline" className="hidden lg:block">
-              Log in
-            </Button>
-            <Button href="#" className="hidden lg:block">
-              Download
-            </Button> */}
                     </div>
                 </Container>
             </nav>
