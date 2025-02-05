@@ -1,3 +1,4 @@
+import AccordionFeatures from "@/components/accordion-features";
 import BeforeAfter from "@/components/before-after";
 import { Container } from "@/components/container";
 import { Header } from "@/components/header";
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero/>
       {/*<LogoClouds/>*/}
       <BeforeAfter/>
+      <AccordionFeatures/>
     </Container>
   );
 }
