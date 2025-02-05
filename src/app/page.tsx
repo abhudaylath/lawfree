@@ -1,12 +1,12 @@
 import { Container } from "@/components/container";
 import { Header } from "@/components/header";
+import Hero from "@/components/hero";
 
 export default function Home() {
   return (
     <Container>
-      <Header>
-
-      </Header>
+      <Header></Header>
+      <Hero/>
     </Container>
   );
 }
