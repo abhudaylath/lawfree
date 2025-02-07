@@ -4,13 +4,11 @@ import TestimonialSingle from "./testimonial-single";
 
 const faqData = [
     {
-        question: "What is QuillMinds?",
+        question: "What is AI Legal Assistant?",
         answer: (
             <div className="space-y-2 leading-relaxed">
                 <p>
-                    QuillMinds is an AI-powered platform designed to assist teachers with
-                    lesson planning and educational content creation. Our goal is to save
-                    educators time and enhance the quality of their teaching materials.
+                    AI Legal Assistant is an advanced AI-powered platform designed to assist legal professionals with legal document drafting, case law research, and legal strategy suggestions. It helps streamline workflows and enhance efficiency in legal practice.
                 </p>
             </div>
         ),
@@ -18,47 +16,47 @@ const faqData = [
     {
         question: "How does the free plan work?",
         answer:
-            "Our free plan offers 50 credits for AI-powered content generation. This allows you to explore QuillMinds' capabilities and create several lesson plans or educational resources without any cost.",
+            "Our free plan offers 10 AI-generated legal drafts and basic case law search capabilities. This allows you to explore AI Legal Assistant's features and experience its benefits at no cost.",
     },
     {
-        question: "What features are included in the subscription plan?",
+        question: "What features are included in the Pro Plan?",
         answer:
-            "The subscription plan offers unlimited AI-powered content generation, advanced customization options, priority support, and access to premium educational resources and templates.",
+            "The Pro Plan includes unlimited AI-generated legal documents, advanced case law research, legal contract analysis, AI-powered legal strategy suggestions, and priority support.",
     },
     {
-        question: "Can I try QuillMinds before subscribing?",
+        question: "Can I try AI Legal Assistant before subscribing?",
         answer:
-            "Absolutely! You can start with our free plan, which includes 50 credits for content generation. This allows you to experience the platform's capabilities before deciding to subscribe.",
+            "Absolutely! Our free plan allows you to generate up to 10 legal drafts and perform basic case law searches to see how AI Legal Assistant can enhance your legal practice before committing to a subscription.",
     },
     {
-        question: "How does AI assist in lesson planning?",
+        question: "How does AI assist in legal research?",
         answer:
-            "Our AI analyzes educational standards, best teaching practices, and your input to generate comprehensive lesson plans, activities, and assessments tailored to your specific needs and teaching style.",
+            "Our AI analyzes vast legal databases, case laws, and statutes to provide precise and relevant insights, streamlining your legal research and saving you valuable time.",
     },
     {
         question: "Is my data secure?",
         answer:
-            "Yes, we take data security very seriously. All user data is encrypted, and we adhere to strict privacy policies to ensure your information and created content remain confidential.",
+            "Yes, we prioritize data security. All user data is encrypted, and we comply with strict legal industry privacy standards to ensure confidentiality and protection of your sensitive information.",
     },
     {
-        question: "Can I customize the AI-generated content?",
+        question: "Can I customize AI-generated legal drafts?",
         answer:
-            "Absolutely! While our AI provides a strong foundation, you have full control to edit, customize, and refine any generated content to perfectly match your teaching needs and style.",
+            "Absolutely! AI-generated legal documents serve as a strong foundation, and you have full control to edit, refine, and tailor them to your specific legal needs.",
     },
     {
-        question: "What subjects and grade levels does QuillMinds support?",
+        question: "What types of legal documents can AI Legal Assistant generate?",
         answer:
-            "QuillMinds supports a wide range of subjects and grade levels, from elementary to high school. Our AI is continuously updated to align with current educational standards across various disciplines.",
+            "AI Legal Assistant can generate contracts, agreements, legal memos, demand letters, compliance documents, and various other legal drafts across multiple practice areas.",
     },
     {
-        question: "How often is new content added?",
+        question: "How frequently is AI Legal Assistant updated?",
         answer:
-            "We regularly update our content library and AI models to ensure you have access to the latest educational resources and teaching methodologies. Subscribers receive notifications about new features and content.",
+            "We continuously enhance our AI models and legal database to provide the most up-to-date legal insights and document templates, ensuring you have access to the latest legal standards and regulations.",
     },
     {
-        question: "Can I collaborate with other teachers on QuillMinds?",
+        question: "Can I collaborate with my legal team on AI Legal Assistant?",
         answer:
-            "Yes, our platform includes collaboration features that allow you to share and co-edit lesson plans with colleagues, fostering a community of educators and enabling the exchange of ideas.",
+            "Yes, our platform includes collaboration features that allow legal professionals to share and co-edit legal documents, enhancing teamwork and efficiency within your practice.",
     },
 ];
 
@@ -82,8 +80,7 @@ const FAQItem = ({
             >
                 <span className="flex-1 text-slate-800">{question}</span>
                 <svg
-                    className={`ml-auto h-4 w-4 flex-shrink-0 fill-current transition-transform duration-200 ${isOpen ? "rotate-180" : ""
-                        }`}
+                    className={`ml-auto h-4 w-4 flex-shrink-0 fill-current transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
                     viewBox="0 0 16 16"
                     xmlns="http://www.w3.org/2000/svg"
                 >
@@ -91,8 +88,7 @@ const FAQItem = ({
                 </svg>
             </button>
             <div
-                className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-                    }`}
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
             >
                 <div className="pb-5 leading-relaxed text-slate-600">
                     {typeof answer === "string" ? <p>{answer}</p> : answer}
@@ -133,10 +129,10 @@ export default function FAQ() {
                 </div>
                 <TestimonialSingle
                     testimonial={{
-                        name: "Emily Thompson",
+                        name: "Michael Carter",
                         content:
-                            "QuillMinds has transformed my teaching experience. The AI-powered lesson plans are not only time-saving but also incredibly creative and engaging for my students.",
-                        firmName: "Westfield High School",
+                            "AI Legal Assistant has completely changed the way I practice law. It saves time, enhances accuracy, and allows me to focus on higher-value tasks for my clients.",
+                        firmName: "Carter & Associates Law Firm",
                         image: "/pro.png",
                     }}
                 />
