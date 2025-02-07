@@ -2,6 +2,7 @@ import AccordionFeatures from "@/components/accordion-features";
 import BeforeAfter from "@/components/before-after";
 import { Container } from "@/components/container";
 import CTA from "@/components/cta";
+import FadeIn from "@/components/fadein";
 import FAQ from "@/components/faq";
 import Footer from "@/components/footer";
 import { Header } from "@/components/header";
@@ -11,6 +12,7 @@ import Pricing from "@/components/pricing";
 
 export default function Home() {
   return (
+    <FadeIn>
     <Container>
       <Header></Header>
       <Hero/>
@@ -22,5 +24,6 @@ export default function Home() {
       <CTA/>
       <Footer/>
     </Container>
+    </FadeIn>
   );
 }
