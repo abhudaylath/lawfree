@@ -279,11 +279,11 @@ export default function AccordionFeatures() {
             </div>
             <TestimonialSingle
                 testimonial={{
-                    name: "Sarah Johnson",
+                    name: "James Anderson",
                     content:
-                        "This AI teaching assistant is a game-changer! It's incredibly intuitive and has saved me hours of lesson planning time. My students are more engaged than ever.",
-                    schoolName: "Oakridge Elementary",
-                    image: "https://api.dicebear.com/6.x/avataaars/svg?seed=Sarah",
+                        "This AI legal assistant is a game-changer! It provided me with instant legal insights and helped me draft contracts effortlessly. A must-have for legal professionals.",
+                    firmName: "Anderson & Co. Law Firm",
+                    image: "/pro.png",
                 }}
             />
         </section>

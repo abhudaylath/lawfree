@@ -6,7 +6,7 @@ export default function TestimonialSingle({
     testimonial: {
         name: string;
         content: React.ReactNode;
-        schoolName: string;
+        firmName: string;
         image: string;
     };
 }) {
@@ -47,7 +47,7 @@ export default function TestimonialSingle({
                 />
                 <div>
                     <p className="font-semibold text-slate-800">{testimonial.name}</p>
-                    <p className="text-sm text-slate-600">{testimonial.schoolName}</p>
+                    <p className="text-sm text-slate-600">{testimonial.firmName}</p>
                 </div>
             </div>
         </div>
