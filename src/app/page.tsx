@@ -1,6 +1,7 @@
 import AccordionFeatures from "@/components/accordion-features";
 import BeforeAfter from "@/components/before-after";
 import { Container } from "@/components/container";
+import FAQ from "@/components/faq";
 import { Header } from "@/components/header";
 import Hero from "@/components/hero";
 import Pricing from "@/components/pricing";
@@ -15,6 +16,7 @@ export default function Home() {
       <BeforeAfter/>
       <AccordionFeatures/>
       <Pricing />
+      <FAQ/>
     </Container>
   );
 }
