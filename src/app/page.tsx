@@ -3,6 +3,7 @@ import BeforeAfter from "@/components/before-after";
 import { Container } from "@/components/container";
 import { Header } from "@/components/header";
 import Hero from "@/components/hero";
+import Pricing from "@/components/pricing";
 //import LogoClouds from "@/components/logo-clouds";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       {/*<LogoClouds/>*/}
       <BeforeAfter/>
       <AccordionFeatures/>
+      <Pricing />
     </Container>
   );
 }
