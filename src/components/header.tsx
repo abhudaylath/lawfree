@@ -118,7 +118,6 @@ export function Header() {
                                                             Pricing
                                                         </MobileNavLink>
                                                         <MobileNavLink href="/#faq">FAQs</MobileNavLink>
-                                                        <MobileNavLink href="/blog">Blog</MobileNavLink>
                                                     </div>
                                                     <div className="flex flex-col gap-4 mt-8">
                                                         <Button href="/" outline>

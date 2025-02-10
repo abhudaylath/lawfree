@@ -2,16 +2,16 @@ import React from 'react'
 
 function layout({
     children,
-  }: Readonly<{
+}: Readonly<{
     children: React.ReactNode;
-  }>) {
-  return (
-    <div>
+}>) {
+    return (
         <div>
-            {children}
+            <div>
+                {children}
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default layout
