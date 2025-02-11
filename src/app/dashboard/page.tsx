@@ -7,9 +7,6 @@ function Dashboard() {
     <div>
       <SearchSection/>
       <TemplateListSection/>
-      <div>
-        Dashboard
-      </div>
     </div>
   )
 }

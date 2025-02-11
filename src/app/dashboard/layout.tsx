@@ -12,7 +12,7 @@ function layout({
             <div>
                 <Sidebar />
             </div>
-            <div className='md:ml-64 bg-slate-100 h-screen'>
+            <div className='md:ml-64 bg-slate-100'>
                 <Header/>
                 {children}
             </div>
