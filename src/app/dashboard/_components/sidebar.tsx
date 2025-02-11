@@ -14,7 +14,6 @@ export interface MenuItem {
 function Sidebar() {
 
     const path = usePathname();
-    console.log(typeof path);
     
     return (
         <div className="hidden md:flex flex-col z-10 w-64 bg-white text-white fixed top-0 left-0 h-screen overflow-auto p-4">

@@ -1,7 +1,11 @@
 import { Search } from "lucide-react";
 import React from "react";
 
-function SearchSection() {
+interface SearchSectionProps {
+  onSearchInput: (value: string) => void;
+}
+
+function SearchSection({onSearchInput}:SearchSectionProps) {
   return (
     <div className="p-10 bg-blue-500 text-white shadow-lg text-center">
       <h2 className="text-3xl font-bold">Browse All Services</h2>
@@ -13,6 +17,7 @@ function SearchSection() {
         <input
           type="text"
           placeholder="Search services..."
+          onChange={(e) => onSearchInput(e.target.value)}
           className="ml-2 w-full bg-transparent text-gray-900 placeholder-gray-500 focus:outline-none"
         />
       </div>
