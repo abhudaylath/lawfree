@@ -6,7 +6,7 @@ export interface TEMPLATE {
   name: string;
   description: string;
   category: string;
-  icon: string; // Should be a valid image URL
+  icon: string; 
 }
 
 function TemplateListSection() {
@@ -15,7 +15,7 @@ function TemplateListSection() {
       <h2 className="text-3xl font-bold text-center mb-6 text-gray-900">
         Available Services
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {legalAiServices.map((item: TEMPLATE, index: number) => (
           <ServiceCard 
             key={index}
