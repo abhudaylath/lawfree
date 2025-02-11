@@ -1,13 +1,13 @@
 import React from 'react'
-import Sidebar from './_components/sidebar'
+import SearchSection from './_components/searchSection'
+import TemplateListSection from './_components/templateListSection'
 
 function Dashboard() {
   return (
     <div>
+      <SearchSection/>
+      <TemplateListSection/>
       <div>
-        <Sidebar/>
-      </div>
-      <div className='md:ml-64 bg-slate-100 h-screen'>
         Dashboard
       </div>
     </div>

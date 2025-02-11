@@ -18,9 +18,10 @@ function Sidebar() {
     
     return (
         <div className="hidden md:flex flex-col z-10 w-64 bg-white text-white fixed top-0 left-0 h-screen overflow-auto p-4">
-            <h1 className='text-2xl pl-4 text-black'>
+            <h1 className='text-2xl pl-4 pt-4 text-black'>
                 <Link href="/">LawFree</Link>
             </h1>
+            <hr className='mt-5 border'/>
             <div className="flex flex-col justify-between h-full">
                 <ul className='w-full pt-8 space-y-2 flex flex-col'>
                     <li>
@@ -39,7 +40,7 @@ function Sidebar() {
                         </ActiveLink>
                     </li>
                     <li>
-                        <ActiveLink href='/dashboard/Settings' icon={Settings} path={path}>
+                        <ActiveLink href='/dashboard/settings' icon={Settings} path={path}>
                             Settings
                         </ActiveLink>
                     </li>

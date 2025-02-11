@@ -1,0 +1,23 @@
+import { Search } from "lucide-react";
+import React from "react";
+
+function SearchSection() {
+  return (
+    <div className="p-10 bg-blue-500 text-white shadow-lg text-center">
+      <h2 className="text-3xl font-bold">Browse All Services</h2>
+      <p className="mt-2 text-lg opacity-90">
+        Find the best AI-powered tools to streamline your legal workflow.
+      </p>
+      <div className="mt-4 flex items-center justify-center bg-white rounded-lg px-3 py-2 max-w-md mx-auto">
+        <Search className="text-gray-500 w-5 h-5" />
+        <input
+          type="text"
+          placeholder="Search services..."
+          className="ml-2 w-full bg-transparent text-gray-900 placeholder-gray-500 focus:outline-none"
+        />
+      </div>
+    </div>
+  );
+}
+
+export default SearchSection;
