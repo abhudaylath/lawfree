@@ -6,8 +6,16 @@ export interface TEMPLATE {
   name: string;
   description: string;
   category: string;
-  icon: string; 
+  icon: string;
+  slug: string;
+  form: {
+    label: string;
+    type: string;
+    placeholder: string;
+  }[];
+  aiPrompt: string;
 }
+
 
 function TemplateListSection({userSearchInput}:{userSearchInput:string}) {
   const [templateList,setTemplateList] = useState(legalAiServices);
@@ -22,6 +30,7 @@ function TemplateListSection({userSearchInput}:{userSearchInput:string}) {
       setTemplateList(legalAiServices);
     }
   },[userSearchInput])
+  
   return (
     <div className="p-6">
       <h2 className="text-3xl font-bold text-center mb-6 text-gray-900">
@@ -33,7 +42,8 @@ function TemplateListSection({userSearchInput}:{userSearchInput:string}) {
             key={index}
             name={item.name}
             description={item.description}
-            icon={item.icon} // Ensure this is a valid image URL
+            icon={item.icon}
+            slug={item.slug}
           />
         ))}
       </div>
