@@ -12,7 +12,7 @@ export default function CTA() {
                     <p className="mb-12 max-w-md text-lg text-slate-500">
                         Automate legal document drafting, enhance research efficiency, and provide top-tier legal insights—all with the power of AI.
                     </p>
-                    <Button className="h-12 w-48 text-lg" href="/dashboard">
+                    <Button className="h-12 w-48 text-lg" color="blue" href="/dashboard">
                         Get Started
                     </Button>
                 </div>

@@ -17,6 +17,7 @@ function Hero() {
                         </p>
                         <div className="mt-10 flex flex-col items-center justify-center gap-y-6">
                             <Button
+                                color="blue"
                                 href={"/dashboard"}
                                 className="h-12 w-64 rounded-md"
                             >

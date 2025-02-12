@@ -20,7 +20,7 @@ function Sidebar() {
             <h1 className='text-2xl pl-4 pt-4 text-black'>
                 <Link href="/">LawFree</Link>
             </h1>
-            <hr className='mt-5 border'/>
+            <hr className='mt-4 border'/>
             <div className="flex flex-col justify-between h-full">
                 <ul className='w-full pt-8 space-y-2 flex flex-col'>
                     <li>

@@ -26,6 +26,7 @@ function MenuIcon(props: React.ComponentPropsWithoutRef<"svg">) {
     );
 }
 
+
 function ChevronUpIcon(props: React.ComponentPropsWithoutRef<"svg">) {
     return (
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
@@ -57,18 +58,18 @@ function MobileNavLink(
 export function Header() {
     return (
         <header>
-            <nav className="px-8 mx-auto max-w-6xl bg-primary text-white">
+            <nav className="px-8 mx-auto max-w-6xl">
                 <Container className="flex relative z-50 justify-between py-8">
                     <div className="flex relative z-10 gap-16 justify-between items-center w-full">
                         <Link href="/" className="flex gap-2 items-center font-semibold">
                             <SVGLogo />
-                            <span className="text-lg font-bold">
+                            <span className="text-lg font-bold text-slate-800">
                                 LawFree
                             </span>
                         </Link>
                         <div className="hidden justify-center items-center lg:flex lg:gap-10">
                             <NavLinks />
-                            <Button href="/dashboard">
+                            <Button href="/dashboard"  color="blue">
                                 Get Started
                             </Button>
                         </div>
@@ -118,10 +119,6 @@ export function Header() {
                                                             Pricing
                                                         </MobileNavLink>
                                                         <MobileNavLink href="/#faq">FAQs</MobileNavLink>
-                                                    </div>
-                                                    <div className="flex flex-col gap-4 mt-8">
-                                                        
-                                                        <Button href="/dashboard">Get</Button>
                                                     </div>
                                                 </PopoverPanel>
                                             </>
