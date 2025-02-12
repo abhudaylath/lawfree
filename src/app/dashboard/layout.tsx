@@ -8,7 +8,7 @@ function layout({
     children: React.ReactNode;
 }>) {
     return (
-        <div>
+        <div className='bg-slate-100 min-h-screen'>
             <div>
                 <Sidebar />
             </div>
