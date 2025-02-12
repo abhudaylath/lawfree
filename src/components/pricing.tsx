@@ -85,13 +85,13 @@ function PricingCard({
         <div className={`relative w-full max-w-lg ${isFeatured ? "lg:-mt-4" : ""}`}>
             {isFeatured && (
                 <div className="absolute left-1/2 top-0 z-20 -translate-x-1/2 -translate-y-1/2">
-                    <span className="whitespace-nowrap rounded-full bg-blue-500 px-2 py-1 text-xs font-semibold text-white">
+                    <span className="whitespace-nowrap rounded-full bg-black px-2 py-1 text-xs font-semibold text-white">
                         BEST CHOICE FOR LAWYERS
                     </span>
                 </div>
             )}
             <div
-                className={`relative z-10 h-full rounded-lg ${isFeatured ? "ring-2 ring-blue-500" : "border border-zinc-200"
+                className={`relative z-10 h-full rounded-lg ${isFeatured ? "ring-2 ring-black" : "border border-zinc-200"
                     }`}
             >
                 <div className="flex h-full flex-col gap-5 rounded-lg bg-white p-8 lg:gap-8">
@@ -141,7 +141,7 @@ function PricingCard({
                         ))}
                     </ul>
                     <div className="space-y-2">
-                        <Button href={buttonLink} color="blue" className="w-full">
+                        <Button href={buttonLink} className="w-full">
                             Get AI Legal Assistant
                         </Button>
                     </div>

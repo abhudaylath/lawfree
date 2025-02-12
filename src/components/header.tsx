@@ -57,18 +57,18 @@ function MobileNavLink(
 export function Header() {
     return (
         <header>
-            <nav className="px-8 mx-auto max-w-6xl">
+            <nav className="px-8 mx-auto max-w-6xl bg-primary text-white">
                 <Container className="flex relative z-50 justify-between py-8">
                     <div className="flex relative z-10 gap-16 justify-between items-center w-full">
                         <Link href="/" className="flex gap-2 items-center font-semibold">
                             <SVGLogo />
-                            <span className="text-lg font-bold text-slate-800">
+                            <span className="text-lg font-bold">
                                 LawFree
                             </span>
                         </Link>
                         <div className="hidden justify-center items-center lg:flex lg:gap-10">
                             <NavLinks />
-                            <Button href="/sign-up" color="blue">
+                            <Button href="/dashboard">
                                 Get Started
                             </Button>
                         </div>
@@ -120,10 +120,8 @@ export function Header() {
                                                         <MobileNavLink href="/#faq">FAQs</MobileNavLink>
                                                     </div>
                                                     <div className="flex flex-col gap-4 mt-8">
-                                                        <Button href="/" outline>
-                                                            Log in
-                                                        </Button>
-                                                        <Button href="#">Get Started</Button>
+                                                        
+                                                        <Button href="/dashboard">Get</Button>
                                                     </div>
                                                 </PopoverPanel>
                                             </>

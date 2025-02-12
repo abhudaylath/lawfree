@@ -99,7 +99,7 @@ export default function BeforeAfter() {
                                 <p className="text-base font-semibold text-blue-100">After</p>
                                 <svg
                                     aria-hidden="true"
-                                    className="h-6 w-6 text-blue-100"
+                                    className="h-6 w-6 text-white"
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="currentColor"
                                     viewBox="0 0 256 256"

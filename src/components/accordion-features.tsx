@@ -20,7 +20,7 @@ const features = [
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="h-4 w-4 text-blue-600"
+                className="h-4 w-4 text-white"
             >
                 <path
                     fillRule="evenodd"
@@ -33,7 +33,7 @@ const features = [
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="h-4 w-4 text-blue-600"
+                className="h-4 w-4 text-white"
             >
                 <path d="M12 .75a8.25 8.25 0 00-4.135 15.39c.686.398 1.115 1.008 1.134 1.623a.75.75 0 00.577.706c.352.083.71.148 1.074.195.323.041.6-.218.6-.544v-4.661a6.714 6.714 0 01-.937-.171.75.75 0 11.374-1.453 5.261 5.261 0 002.626 0 .75.75 0 11.374 1.452 6.712 6.712 0 01-.937.172v4.66c0 .327.277.586.6.545.364-.047.722-.112 1.074-.195a.75.75 0 00.577-.706c.02-.615.448-1.225 1.134-1.623A8.25 8.25 0 0012 .75z" />
                 <path
@@ -47,7 +47,7 @@ const features = [
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="h-4 w-4 text-blue-600"
+                className="h-4 w-4 text-white"
             >
                 <path d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32L19.513 8.2z" />
             </svg>,
@@ -70,7 +70,7 @@ const features = [
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="h-4 w-4 text-blue-600"
+                className="h-4 w-4 text-white"
             >
                 <path
                     fillRule="evenodd"
@@ -83,7 +83,7 @@ const features = [
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="h-4 w-4 text-blue-600"
+                className="h-4 w-4 text-white"
             >
                 <path d="M5.566 4.657A4.505 4.505 0 016.75 4.5h10.5c.41 0 .806.055 1.183.157A3 3 0 0015.75 3h-7.5a3 3 0 00-2.684 1.657zM2.25 12a3 3 0 013-3h13.5a3 3 0 013 3v6a3 3 0 01-3 3H5.25a3 3 0 01-3-3v-6zM5.25 7.5c-.41 0-.806.055-1.184.157A3 3 0 016.75 6h10.5a3 3 0 012.684 1.657A4.505 4.505 0 0018.75 7.5H5.25z" />
             </svg>,
@@ -92,7 +92,7 @@ const features = [
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="h-4 w-4 text-blue-600"
+                className="h-4 w-4 text-white"
             >
                 <path
                     fillRule="evenodd"
@@ -119,7 +119,7 @@ const features = [
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="h-4 w-4 text-blue-600"
+                className="h-4 w-4 text-white"
             >
                 <path d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32L19.513 8.2z" />
             </svg>,
@@ -128,7 +128,7 @@ const features = [
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="h-4 w-4 text-blue-600"
+                className="h-4 w-4 text-white"
             >
                 <path
                     fillRule="evenodd"
@@ -180,7 +180,7 @@ export default function AccordionFeatures() {
                                     >
                                         <span
                                             className={`duration-100 ${activeFeature === feature.id
-                                                    ? "font-bold text-blue-600"
+                                                    ? "font-bold text-white"
                                                     : ""
                                                 }`}
                                         >
@@ -188,7 +188,7 @@ export default function AccordionFeatures() {
                                         </span>
                                         <span
                                             className={`flex-1 text-slate-700 ${activeFeature === feature.id
-                                                    ? "font-bold text-blue-600"
+                                                    ? "font-bold text-white"
                                                     : ""
                                                 }`}
                                         >

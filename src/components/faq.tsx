@@ -110,7 +110,7 @@ export default function FAQ() {
             <div className="mx-auto max-w-7xl px-8 py-24">
                 <div className="flex flex-col gap-12 md:flex-row">
                     <div className="flex basis-1/2 flex-col text-left">
-                        <p className="mb-4 inline-block font-bold text-blue-500">FAQ</p>
+                        <p className="mb-4 inline-block font-bold text-white">FAQ</p>
                         <p className="text-3xl font-extrabold text-slate-800 md:text-4xl">
                             Frequently Asked Questions
                         </p>

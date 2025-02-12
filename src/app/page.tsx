@@ -13,7 +13,7 @@ import Pricing from "@/components/pricing";
 export default function Home() {
   return (
     <FadeIn>
-    <Container>
+    <Container className="bg-primary text-white">
       <Header></Header>
       <Hero/>
       {/*<LogoClouds/>*/}
