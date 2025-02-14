@@ -5,10 +5,12 @@ import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import { Loader2Icon } from "lucide-react";
 
 interface Props {
   selectedTemplate: TEMPLATE | undefined;
   userFormInput: (data: FormData) => void;
+  loading:boolean
 }
 
 interface FormData {
@@ -16,7 +18,7 @@ interface FormData {
 }
 
 
-function FormSection({ selectedTemplate, userFormInput }: Props) {
+function FormSection({ selectedTemplate, userFormInput ,loading}: Props) {
   const [formData, setFormData] = useState<FormData>({});
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -35,7 +37,7 @@ function FormSection({ selectedTemplate, userFormInput }: Props) {
   }
 
   return (
-    <div className="p-5 shadow-md border rounded-lg bg-white">
+    <div className="p-5 shadow-md border rounded-lg bg-white overflow-auto">
       <Image src={selectedTemplate.icon} alt="icon" height={70} width={70} />
       <h2 className="font-bold text-2xl mb-2">{selectedTemplate.name}</h2>
       <p className="text-sm text-gray-500">{selectedTemplate.description}</p>
@@ -61,7 +63,7 @@ function FormSection({ selectedTemplate, userFormInput }: Props) {
             ) : null}
           </div>
         ))}
-        <Button type="submit" className="w-full p-5 bg-blue-500 hover:bg-blue-700">
+        <Button type="submit" className="w-full p-5 bg-blue-500 hover:bg-blue-700" disabled={loading}>{loading&&<Loader2Icon className="animate-spin"/>}
           Generate Content
         </Button>
       </form>
