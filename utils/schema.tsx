@@ -1,11 +1,10 @@
-import { pgTable, serial, text, varchar } from "drizzle-orm/pg-core";
+import { pgTable, serial, text, varchar, json } from "drizzle-orm/pg-core";
 
-
-export const AIOutput = pgTable('aiOutput',{
-    id: serial('id').primaryKey(),
-    formData: varchar('formData').notNull(),
-    aiResponse: text('aiResponse'),
-    temptateStug : varchar('temptateSlug').notNull(),
-    createdBy: varchar('createdBy').notNull(),
-    createdAt:varchar('createdAt'),
-})
+export const AIOutput = pgTable("aiOutput", {
+    id: serial("id").primaryKey(),
+    formData: json("formData"), 
+    aiResponse: text("aiResponse"),
+    temptateSlug: varchar("temptateSlug"),
+    createdBy: varchar("createdBy"),
+    createdAt: varchar("createdAt"),
+});

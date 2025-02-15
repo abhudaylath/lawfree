@@ -18,7 +18,7 @@ function OutputSection({aiOutput}:props) {
 
   const handleEditorChange = () => {
     if (editorRef.current) {
-      console.log(editorRef.current.getInstance().getMarkdown());
+      //console.log(editorRef.current.getInstance().getMarkdown());
     }
   };
 
