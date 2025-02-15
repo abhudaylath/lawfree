@@ -5,7 +5,7 @@ function Settings() {
         <div>
             
             <div>
-                Settings
+                
             </div>
         </div>
     )

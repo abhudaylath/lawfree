@@ -1,23 +1,23 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import Sidebar from './_components/sidebar';
 import Header from './_components/header';
+import { TotalUsageContext } from '../(context)/TotalUsageContext';
 
-function layout({
-    children,
-}: Readonly<{
-    children: React.ReactNode;
-}>) {
+function Layout({ children }: { children: React.ReactNode }) {
+    const [totalUsage, setTotalUsage] = useState<number>(0);
+
     return (
-        <div className='bg-slate-100 min-h-screen'>
-            <div>
+        <TotalUsageContext.Provider value={{ totalUsage, setTotalUsage }}>
+            <div className="bg-slate-100 min-h-screen flex">
                 <Sidebar />
+                <div className="flex-1 md:ml-64">
+                    <Header />
+                    {children}
+                </div>
             </div>
-            <div className='md:ml-64'>
-                <Header/>
-                {children}
-            </div>
-        </div>
+        </TotalUsageContext.Provider>
     )
 }
 
-export default layout
+export default Layout;
