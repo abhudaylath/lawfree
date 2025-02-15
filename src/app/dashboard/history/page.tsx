@@ -42,36 +42,57 @@ const HistoryPage = () => {
   return (
     <div className="p-5">
       <h2 className="text-2xl font-semibold">History</h2>
-      <p className="text-gray-500">Search your previously generated AI content</p>
-      <div className="overflow-x-auto mt-5 bg-white shadow-md rounded-lg p-4">
-        <table className="w-full border-collapse">
+      <p className="text-gray-500 mb-4">
+        Search your previously generated AI content
+      </p>
+      <div className="mt-5 bg-white shadow-md rounded-lg overflow-x-scroll">
+        <table className="min-w-[600px] w-full border-collapse">
           <thead>
             <tr className="bg-gray-100 text-left">
-              <th className="p-2">TEMPLATE</th>
-              <th className="p-2">AI RESP</th>
-              <th className="p-2">DATE</th>
-              <th className="p-2">WORDS</th>
-              <th className="p-2">COPY</th>
+              <th className="p-2 text-xs sm:text-sm">TEMPLATE</th>
+              <th className="p-2 text-xs sm:text-sm">AI RESP</th>
+              <th className="p-2 text-xs sm:text-sm">DATE</th>
+              <th className="p-2 text-xs sm:text-sm">WORDS</th>
+              <th className="p-2 text-xs sm:text-sm">COPY</th>
             </tr>
           </thead>
           <tbody>
             {history.map((entry) => {
-              const template = legalAiServices.find((item) => item.slug === entry.temptateSlug)?.name || "Unknown";
-              const icon = legalAiServices.find((item)=>item.slug === entry.temptateSlug)?.icon||"";              
+              const template =
+                legalAiServices.find(
+                  (item) => item.slug === entry.temptateSlug
+                )?.name || "Unknown";
+              const icon =
+                legalAiServices.find(
+                  (item) => item.slug === entry.temptateSlug
+                )?.icon || "";
               return (
                 <tr key={entry.id} className="border-t">
                   <td className="p-2 flex items-center gap-2">
-                    <Image src={icon} width={14} height={14} alt="icon"/>
-                    <span className=" font-medium">{template}</span>
+                    <Image src={icon} width={14} height={14} alt="icon" />
+                    <span className="font-medium text-xs sm:text-sm">
+                      {template}
+                    </span>
                   </td>
-                  <td className="p-2 text-gray-600 truncate max-w-xs">
+                  <td className="p-2 text-gray-600 truncate max-w-xs text-xs sm:text-sm">
                     {entry.aiResponse?.substring(0, 100)}...
                   </td>
-                  <td className="p-2">{entry.createdAt}</td>
-                  <td className="p-2">{entry.aiResponse?.split(" ").length}</td>
+                  <td className="p-2 text-xs sm:text-sm">{entry.createdAt}</td>
+                  <td className="p-2 text-xs sm:text-sm">
+                    {entry.aiResponse?.split(" ").length}
+                  </td>
                   <td className="p-2">
-                    <Button variant="outline" size="sm" onClick={() => clipboard.copy(entry.aiResponse)}>
-                      {clipboard.copied ? <ClipboardCheck size={16} /> : <Copy size={16} />} Copy
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => clipboard.copy(entry.aiResponse)}
+                    >
+                      {clipboard.copied ? (
+                        <ClipboardCheck size={16} />
+                      ) : (
+                        <Copy size={16} />
+                      )}{" "}
+                      Copy
                     </Button>
                   </td>
                 </tr>
