@@ -5,7 +5,7 @@ import { db } from "../../../../utils/db";
 import { AIOutput } from "../../../../utils/schema";
 import { useUser } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
-import { Copy, ClipboardCheck } from "lucide-react";
+import { Copy } from "lucide-react";
 import { useClipboard } from "@mantine/hooks";
 import { eq } from "drizzle-orm";
 import legalAiServices from "@/app/(data)/template";
@@ -29,7 +29,7 @@ const HistoryPage = () => {
           .from(AIOutput)
           .where(eq(AIOutput.createdBy, email))
           .execute();
-          
+
         setHistory(result);
       } catch (error) {
         console.error("Error fetching history:", error);
@@ -88,11 +88,10 @@ const HistoryPage = () => {
                       onClick={() => clipboard.copy(entry.aiResponse)}
                     >
                       {clipboard.copied ? (
-                        <ClipboardCheck size={16} />
+                        'Copied'
                       ) : (
                         <Copy size={16} />
-                      )}{" "}
-                      Copy
+                      )}
                     </Button>
                   </td>
                 </tr>

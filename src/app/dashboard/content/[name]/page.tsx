@@ -39,13 +39,13 @@ function CreateNewContent({ params }: Props) {
     const { totalUsage, setTotalUsage } = context;
 
     const GenerateAIContent = async (FormData: object) => {
-        if (totalUsage >= 2000) {
+        if (totalUsage >= 10000) {
             toast({
                 title: "Daily limit reached",
                 description: "Daily credits are up! Upgrade to access unlimited usage.",
                 variant: "destructive",
             });
-            setTotalUsage(2000);
+            setTotalUsage(10000);
             return;
         }
         setLoading(true);

@@ -17,15 +17,15 @@ function UsageTrack() {
     }
 
     const { totalUsage, setTotalUsage } = context;
-    const totalCredits = 2000;
+    const totalCredits = 10000;
 
     const GetTotalUsage = useCallback((result: AIOutputEntry[]) => {
         let totalWord = 0;
         result.forEach(element => {
             totalWord += element.aiResponse ? element.aiResponse.split(" ").length : 0;
         });
-        if(totalWord>=2000){
-            totalWord=2000
+        if(totalWord>=10000){
+            totalWord=10000
         }
         setTotalUsage(totalWord);
         
