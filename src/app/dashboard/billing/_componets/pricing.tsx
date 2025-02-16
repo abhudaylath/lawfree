@@ -1,21 +1,14 @@
 "use client";
-import TestimonialSingle from "./testimonial-single";
-import { Button } from "./button";
+import { Button } from "../../../../components/button";
 export default function Pricing() {
     return (
         <section className="overflow-hidden bg-slate-50" id="pricing">
-            <div className="mx-auto max-w-5xl px-8 py-24">
-                <div className="mb-20 flex w-full flex-col text-center">
+            <div className="mx-auto max-w-5xl px-8 py-8">
+                <div className="mb-8 flex w-full flex-col text-center">
                     <div className="mb-4">
                         <div className="mx-auto max-w-fit animate-pulse whitespace-nowrap rounded-full bg-blue-500 px-2 py-1 text-xs font-semibold text-white">
                             ✨ Exclusive Offer — ₹50 OFF ✨
                         </div>
-                    </div>
-                    <h2 className="mx-auto mb-8 max-w-xl text-3xl font-bold tracking-tight text-slate-800 lg:text-5xl">
-                        Revolutionize Your Legal Practice with AI
-                    </h2>
-                    <div className="mx-auto max-w-md font-medium text-slate-500">
-                        Automate legal document drafting, enhance research efficiency, and provide top-tier legal insights—all with the power of AI.
                     </div>
                 </div>
                 <div className="relative flex flex-col items-stretch justify-center gap-8 lg:flex-row">
@@ -50,15 +43,6 @@ export default function Pricing() {
                         description="For legal professionals seeking full AI capabilities"
                     />
                 </div>
-                <TestimonialSingle
-                    testimonial={{
-                        name: "Michael Carter",
-                        content:
-                            "This AI-powered legal assistant has transformed the way I work. I draft contracts faster, research efficiently, and provide better service to my clients!",
-                        firmName: "Carter & Associates Law Firm",
-                        image: "/pro.png",
-                    }}
-                />
             </div>
         </section>
     );
@@ -106,7 +90,7 @@ function PricingCard({
                         >
                             <p className="relative">
                                 <span className="absolute inset-x-0 top-[53%] h-[1.5px] bg-slate-900"></span>
-                                <span className="text-slate-700">${originalPrice}</span>
+                                <span className="text-slate-700">₹{originalPrice}</span>
                             </p>
                         </div>
                         <p className="text-5xl font-black tracking-tight text-slate-800">
@@ -114,7 +98,7 @@ function PricingCard({
                         </p>
                         <div className="mb-[4px] flex flex-col justify-end">
                             <p className="text-xs font-semibold uppercase text-slate-500">
-                                USD / month
+                                Rupees / month
                             </p>
                         </div>
                     </div>
@@ -142,7 +126,7 @@ function PricingCard({
                     </ul>
                     <div className="space-y-2">
                         <Button href={buttonLink} color="blue" className="w-full">
-                            Get AI Legal Assistant
+                            Current Plan
                         </Button>
                     </div>
                 </div>

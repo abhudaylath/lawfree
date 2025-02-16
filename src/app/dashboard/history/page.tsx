@@ -48,7 +48,7 @@ const HistoryPage = () => {
       <div className="mt-5 bg-white shadow-md rounded-lg overflow-x-scroll">
         <table className="min-w-[600px] w-full border-collapse">
           <thead>
-            <tr className="bg-gray-100 text-left">
+            <tr className="bg-gray-300 text-left">
               <th className="p-2 text-xs sm:text-sm">TEMPLATE</th>
               <th className="p-2 text-xs sm:text-sm">AI RESP</th>
               <th className="p-2 text-xs sm:text-sm">DATE</th>
